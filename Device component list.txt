@@ -1,0 +1,40 @@
+Current BLE Sensor: Tranducers direct Cirrussense TDWLB0500034 Wireless Pressure Transducer
+Link: https://transducersdirect.com/products/pressure-transducers/wireless-pressure-transducers/cirrussense-tdwlb-wireless-pressure-transducer/
+----------------------------------------------
+Current Hardware in the Sensor:
+[doesn't matter as much since the components we add will act as a seperate system but would still be nice to list in proposal]
+-uses a BLE (Bluetooth low energy module)
+-pressure guage that detects up to 50 psi
+-Uses a lithium Ion battery pack (Tadiran Utility Meter Li-Battery 3.6v)
+- G 1/4 pressure connector
+- housing: 304 stainless steel and high-impact polycarbonate
+-
+----------------------------------------------
+Software that the sensor uses:
+-has its own app called 'Pressure Pro app'
+-once the device is setup within the app you are able to read 
+pressures from the device and store the data locally on the device which has the application installed
+or able to upload the data to 'Tranducers direct data portal cloud' which is a cloud based database which
+can be used to store data 24/7 when connected to a network connection
+
+It doesn't seem that we are able to make modifications to this application or make our additional components work with the database
+but we can still hook up and additional bluetooth connecter and our accelerometer to the power supply and have it send the 
+accelerometer data on a seperate channel. 
+
+-------------------------------------------
+
+Hardware we intend to add:
+BOSCH BMA400 accelerometer
+
+BOSCH Bluetooth Tool Module (GCY42 Bluetooth® Tool Module)
+----------------------------------------------
+Modifications to software (if possible):
+
+Like previosuly stated we arent going to be able to make modifications
+to the Pressure pro app and send the data from the accelerometer through that application
+so we will need an additional channel to send this data to, which is why we will need to make use
+of an additional bluetooth connector from Bosch
+
+To do so we will make use of the 'free Bosch Toolbox mobile app'
+-device has 100 ft of connectivity
+----------------------------------------------
